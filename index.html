@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端一像素边框</title>
+    <link rel="stylesheet" href="css/border.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 60px 0;
+            line-height: 1;
+            font-size: 30px;
+        }
+
+        .wrap {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 500px;
+            width: 80vw;
+            margin: 0 auto 30px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 50px 0;
+            margin: 0 auto 10px;
+            background-color: red;
+            color: #fff;
+        }
+
+        .box h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+        }
+
+        .box code {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>移动端一像素边框</h1>
+        <div class="box border-radius">
+            <h2>实线圆角</h2>
+            <code></code>
+        </div>
+        <div class="box border-radius-dashed">
+            <h2>虚线圆角</h2>
+            <code></code>
+        </div>
+        <div class="box border-all">
+            <h2>四边实线</h2>
+            <code></code>
+        </div>
+        <div class="box border-all-dashed">
+            <h2>四边虚线</h2>
+            <code></code>
+        </div>
+        <div class="box border-left">
+            <h2>左边实线</h2>
+            <code></code>
+        </div>
+        <div class="box border-left-dashed">
+            <h2>左边虚线</h2>
+            <code></code>
+        </div>
+        <div class="box border-right">
+            <h2>右边实线</h2>
+            <code></code>
+        </div>
+        <div class="box border-right-dashed">
+            <h2>右边虚线</h2>
+            <code></code>
+        </div>
+        <div class="box border-top">
+            <h2>上边实线</h2>
+            <code></code>
+        </div>
+        <div class="box border-top-dashed">
+            <h2>上边虚线</h2>
+            <code></code>
+        </div>
+        <div class="box border-bottom">
+            <h2>下边实线</h2>
+            <code></code>
+        </div>
+        <div class="box border-bottom-dashed">
+            <h2>下边虚线</h2>
+            <code></code>
+        </div>
+    </div>
+    <script>
+        var borderClassName, box = document.querySelectorAll(".box");
+        for (let i = 0; i < box.length; i++) {
+            const element = box[i];
+            const code = element.querySelector("code");
+            borderClassName = element.classList[1];
+            code.innerText = `${borderClassName}`;
+        }
+    </script>
+</body>
+
+</html>
