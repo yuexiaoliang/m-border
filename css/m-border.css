@@ -1,3 +1,9 @@
+/*!
+ * Project Name: m-border v1.0.0
+ * Project Author: yuexiaoliang (https://github.com/yuexiaoliang)
+ * Project Location: https://github.com/yuexiaoliang/m-border
+ * Licensed under MIT (https://github.com/yuexiaoliang/m-border/blob/master/LICENSE)
+ */
 :root {
   --border-color: #000;
   --border-radius-size: 10px;
@@ -76,4 +82,4 @@
   bottom: -1px;
   border-bottom-width: 1px;
 }
-/*# sourceMappingURL=border.css.map */
+/*# sourceMappingURL=m-border.css.map */
